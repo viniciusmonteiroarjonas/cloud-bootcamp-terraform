@@ -9,3 +9,9 @@ variable "service_name" {
   description = ""
   default     = "meu-guia"
 }
+
+variable "aws_account_id" {
+  type        = number
+  description = ""
+  default     = 968339500772
+}

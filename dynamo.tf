@@ -60,9 +60,9 @@ ITEM
 
 // AVALIAÇÃO
 
-resource "aws_dynamodb_table" "avaliacao" {
+resource "aws_dynamodb_table" "avaliacoes" {
   hash_key       = "id"
-  name           = "meu-guia-avaliacao"
+  name           = "meu-guia-avaliacoes"
   read_capacity  = 5
   write_capacity = 5
 
@@ -74,9 +74,9 @@ resource "aws_dynamodb_table" "avaliacao" {
   tags = local.common_tags
 }
 
-resource "aws_dynamodb_table_item" "avaliacao" {
-  table_name = aws_dynamodb_table.avaliacao.name
-  hash_key   = aws_dynamodb_table.avaliacao.hash_key
+resource "aws_dynamodb_table_item" "avaliacoes" {
+  table_name = aws_dynamodb_table.avaliacoes.name
+  hash_key   = aws_dynamodb_table.avaliacoes.hash_key
 
   item = <<ITEM
 {

@@ -1,0 +1,205 @@
+{
+	"info": {
+		"_postman_id": "a1759114-9f36-44f9-a52b-c72adfceb544",
+		"name": "Meu Guia",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "536154"
+	},
+	"item": [
+		{
+			"name": "Lista Agendamentos",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url_gateway}}/v1/agendamentos",
+					"host": [
+						"{{url_gateway}}"
+					],
+					"path": [
+						"v1",
+						"agendamentos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Cadastro Agendamento",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": \"2\",\n    \"guia\": \"2\",\n    \"data\": \"2023-07-07\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url_gateway}}/v1/agendamentos",
+					"host": [
+						"{{url_gateway}}"
+					],
+					"path": [
+						"v1",
+						"agendamentos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Lista Guias",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url_gateway}}/v1/guias",
+					"host": [
+						"{{url_gateway}}"
+					],
+					"path": [
+						"v1",
+						"guias"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Cadastro Guia",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": \"2\",\n    \"nome\": \"Vinicius Monteiro Arjonas\",\n    \"email\": \"vinicius@gmail.com\",\n    \"estado\": \"MG\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url_gateway}}/v1/guias",
+					"host": [
+						"{{url_gateway}}"
+					],
+					"path": [
+						"v1",
+						"guias"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Lista Avaliacoes",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url_gateway}}/v1/avaliacoes",
+					"host": [
+						"{{url_gateway}}"
+					],
+					"path": [
+						"v1",
+						"avaliacoes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Cadastro Avaliacao",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"guia\": \"2\",\n    \"id\": \"2\",\n    \"avaliacao\": \"5\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url_gateway}}/v1/avaliacoes",
+					"host": [
+						"{{url_gateway}}"
+					],
+					"path": [
+						"v1",
+						"avaliacoes"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

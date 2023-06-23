@@ -18,7 +18,7 @@ exports.handler = async (event) => {
         console.log(`Received event: ${JSON.stringify(event)}`)
     }
 
-    const table = event.table || process.env.TABLE
+    const table = "meu-guia-avaliacoes";
     if (!table) {
         throw new Error('No table name defined.')
     }
@@ -43,6 +43,7 @@ exports.handler = async (event) => {
     } catch (error) {
         err = new Error(error.message)
     }
+
 
     return {
         statusCode: err ? 500 : 200,

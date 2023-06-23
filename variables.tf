@@ -13,5 +13,5 @@ variable "service_name" {
 variable "aws_account_id" {
   type        = number
   description = ""
-  default     = 968339500772
+  default     = 106182865525
 }

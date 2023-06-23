@@ -4,7 +4,7 @@ data "aws_iam_policy_document" "lambda-assume-role" {
 
     principals {
       type        = "Service"
-      identifiers = ["lambda.amazonaws.com"]
+      identifiers = ["lambda.amazonaws.com", "apigateway.amazonaws.com"]
     }
   }
 }

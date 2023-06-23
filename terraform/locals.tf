@@ -1,6 +1,5 @@
 locals {
-  lambdas_path = "${path.module}/lambdas"
-  # layers_path  = "${path.module}/../app/layers/nodejs"
+  lambdas_path = "${path.module}/../lambdas"
   
   common_tags = {
     Project   = "Meu guia"

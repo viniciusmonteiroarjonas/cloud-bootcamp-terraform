@@ -52,6 +52,7 @@ resource "aws_dynamodb_table_item" "agendamentos" {
 {
   "id": {"S": "1"},
   "data": {"S": "2023-07-07"},
+  "usuario": {"S": "10"},
   "guia": {"S": "1"}
 }
 ITEM
@@ -82,6 +83,7 @@ resource "aws_dynamodb_table_item" "avaliacoes" {
 {
   "id": {"S": "1"},
   "guia": {"S": "1"},
+  "usuario": {"S": "10"},
   "avaliacao": {"S": "10"}
 }
 ITEM

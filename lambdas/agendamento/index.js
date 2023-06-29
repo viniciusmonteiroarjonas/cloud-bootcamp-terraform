@@ -47,7 +47,7 @@ exports.handler = async (event) => {
 
     return {
         statusCode: err ? 500 : 200,
-        body: err ? err.message : JSON.stringify(res),
+        body: err ? err.message : JSON.stringify(res.Items),
         headers: {
             'Content-Type': 'application/json',
         }
